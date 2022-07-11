@@ -22,7 +22,7 @@ function questionsForm() {
                     id = `${element[0]}-${index2 +1}`
                     option_value += `<li>
                         <label for="${id}">
-                            <input type="radio" title="${element[1].answer}" name="${element[0]}" id="${id}" value="${value[0]}" >${value}</input> 
+                            <input type="radio" name="${element[0]}" data-ben="${element[1].answer}" id="${id}" value="${value[0]}" >${value}</input> 
                         </label> </li>`
                 })
 
@@ -32,7 +32,10 @@ function questionsForm() {
                         ${option_value} 
                     </div>`)
             });
-            document.querySelectorAll("input[type='radio']").forEach((ele, i) => ele.addEventListener("change", (e) => e.target.parentElement.style.backgroundColor = (e.target.title == e.target.value) ? "green" : "none"))
+            document.querySelectorAll("input[type='radio']").forEach((ele, i) => ele.addEventListener("change", (e) => {
+                console.log(e.target.dataset.ben)
+                e.target.parentElement.style.backgroundColor = (e.target.dataset.ben == e.target.value) ? "green" : "none"
+            }))
 
         })
         /* display */
