@@ -12,8 +12,8 @@ fetch("../json/quiz.json")
             opt.forEach((ele) => {
                 options += `
                     <li>
-                        <label for="${ques.number}" id="${ques.number}${ind}">
-                            <input type="radio" class="option" name="${ques.number}" title="${ques.answer}" value="${ele}">${ele}</input>
+                        <label for="${ques.number}" name="${ques.number}" id="${ques.number}${ind}">
+                            <input type="radio" class="option" name="${ques.number}" data-ben="${ques.answer}" value="${ele}">${ele}</input>
                         </label>
                     </li>`
             })
@@ -24,7 +24,12 @@ fetch("../json/quiz.json")
              </div>
             `
         });
-        document.querySelectorAll(".option").forEach(elem => elem.addEventListener("change", (e) => e.target.parentElement.style.backgroundColor = (e.target.value == e.target.title && e.target.checked == true) ? "green" : "none"))
+        document.querySelectorAll(".option").forEach(elem => elem.addEventListener("change", (e) => {
+                console.log(e.target.dataset.ben)
+                e.target.parentElement.style.backgroundColor = (e.target.value == e.target.dataset.ben && e.target.checked == true) ? "green" : "none"
+            })
+
+        )
 
 
         // console.log(.id)

@@ -1,0 +1,68 @@
+{
+    "questions": [{
+            "number": 1,
+            "question": "What is the name of the man that was struck dead by God for holding the Ark of God from falling?",
+            "options": ["Uzzah", "Abner", "Obededom", "Edom"],
+            "answer": "Uzzah"
+        },
+        {
+            "number": 2,
+            "question": "Who was the first man in the Bible to get drunk with wine?",
+            "options": ["Lot", "Ham", "Noah", "Solomon"],
+            "answer": "Noah"
+        },
+        {
+            "number": 3,
+            "question": "How old was the oldest man (Methuselah) in the Bible when he died?",
+            "options": ["950", "962", "969", "365"],
+            "answer": "969"
+        },
+        {
+            "number": 4,
+            "question": "How many wives and concubines did king Solomon have?",
+            "options": ["300 wives and 700 concubines", "700 concubines and 300 wives", "700 wives and 300 concubines", "300 concubines and 7000 wives"],
+            "answer": "700 wives and 300 concubines"
+        },
+        {
+            "number": 5,
+            "question": "Who handkerchief healed the sick?",
+            "options": ["Paul", "John", "Peter", "James"],
+            "answer": "Paul"
+        },
+
+        {
+            "number": 6,
+            "question": "State the Golden Rule.",
+            "options": ["Thy shall not steal", "No sin goes unpunished", "Thy shall love thine neighbor as thyself", "Therefore all things whatsoever ye would that men should do to you: do ye even so to them: for this is the law and the prophets"],
+            "answer": "Therefore all things whatsoever ye would that men should do to you: do ye even so to them: for this is the law and the prophets"
+        },
+
+        {
+            "number": 7,
+            "question": "How many people of Jacob's household went to Egypt?",
+            "options": ["17", "12", "13", "70"],
+            "answer": "70"
+        },
+
+        {
+            "number": 8,
+            "question": "What are the names of the two sons' of Joseph?",
+            "options": ["Hophni and Phinehas", "Joshua and Caleb", "Ben-ammi and Moab", "Ephraim and Manasseh"],
+            "answer": "Ephraim and Manasseh"
+        },
+
+        {
+            "number": 9,
+            "question": "Who was the youngest King recorded in the Bible?",
+            "options": ["Solomon (7 years)", "Jeroboam (7 years)", "Rehoboam (7 years)", "Joash (7 years)"],
+            "answer": "Joash (7 years)"
+        },
+
+        {
+            "number": 10,
+            "question": "What was Benjamin's initial name at birth",
+            "options": ["Ben-jami", "Ben", "Favor", "Benoni"],
+            "answer": "Benoni"
+        }
+    ]
+}
