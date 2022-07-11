@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ-API</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./quiz-icon.jpg">
+    <script src="./script.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+
+    <form action="/index2.html">
+        <div id="score-board">
+            <h1>EXERCISE QUESTIONS</h1>
+            <div id="score">Score:</div>
+            <div id="correct">Correct:</div>
+            <div id="wrong">Wrong:</div> <br>
+        </div>
+        <div id="q-num">
+            <select name="subject" id="subject">
+                <option value="default"selected disabled>Select subject</option>
+                <option value="math">Mathematics </option>
+                <option value="english">English</option>
+            </select>
+            <select onchange="questionsForm()" id="number-of-question">
+                <option value="default"selected disabled>Select amount</option>
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <selection name="questions" id="questions">
+
+        </selection>
+        <button id="button" onclick="submitQ()">Submit</button>
+    </form>
+</body>
+
+</html>
