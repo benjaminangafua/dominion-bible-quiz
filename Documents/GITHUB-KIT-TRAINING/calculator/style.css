@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(190, 188, 188);
+}
+
+.input {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 45.5vh;
+}
+
+h1 {
+    text-align: center;
+    font: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    margin: 0% 15%;
+    height: 60vh;
+    width: 100vw;
+}
+
+.btn {
+    padding: 20px;
+    text-align: center;
+    background-color: orange;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media (max-width: 724px) {
+    .container {
+        grid-template-columns: 18% 18% 18% 18%;
+        grid-template-rows: 18% 18% 18% 18% 18% 18%;
+        margin: auto 8%;
+        width: 110vw;
+    }
+}
