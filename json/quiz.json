@@ -63,6 +63,47 @@
             "question": "What was Benjamin's initial name at birth",
             "options": ["Ben-jami", "Ben", "Favor", "Benoni"],
             "answer": "Benoni"
+        },{
+            "number":11,
+            "question":"Where was Moses buried?",
+            "options":["In the valley in the land of Moah. Sepulchre unknown","In the cave of Malchpelah", "Egypt", "In the Red Sea"],
+            "answer":"In the valley in the land of Moah. Sepulchre unknown"
+        },{
+            "number":12,
+            "question":"Who was the first woman prophet?",
+            "options":["Sarah", "Eve", "Rachel", "Miriam"],
+            "answer":"Miriam"
+        },{
+            "number":13,
+            "question":"Name the man that was struck dumb by Angel Gabriel throughout his wife pregnancy(9 months) for unbelief.",
+            "options":["Simeon", "Zacharias","Gideon",  "Hezekiah"],
+            "answer":"Zacharias"
+
+        },{
+            "number":14,
+            "question":"What are the names of the two men who never saw death?",
+            "options":["Joshua and Caleb", "John and Ezekiel", "Moses and Melchizedek", "Enoch and Elijah"],
+            "answer": "Enoch and Elijah"
+        },{
+            "number":15,
+            "question":"Whose house was the ark of God kept for 3 months after the death of Uzzah?",
+            "options":["David", "Obededom", "Joab", "Saul"],
+            "answer":"Obededom"
+        },{
+            "number":16,
+            "question":"What is the name of Joseph's wife?",
+            "options":["Rebekah", "Esther", "Asenath", "Deborah"],
+            "answer":"Asenath"
+        },{
+            "number":17,
+            "question":"What is the second name of Daniel?",
+            "options":["Beltshazzar", "Bethel", "The interpreter", "The Lions' King"],
+            "answer":"Beltshazzar"
+        },{
+            "number":18,
+            "question":"Who was Israel first judge",
+            "options":["Sampson", "Deborah","Jephthah","Othniel"],
+            "answer":"Othniel"
         },
         {
             "number": 19,
@@ -101,7 +142,10 @@
             "answer":"Reuben"
         },
         {
-            
+            "number":25,
+            "question":"What are the names of the rivers that flow into the Garden of Eden?",
+            "options":["Nile, Jordan River, and The Dead Sea", "Pison, Gihon, Hiddekel and Euphrates", "Pacific, Atlantic, and Victor", "Volta, Cavala, Lofa and Mano"],
+            "answer":"Pison, Gihon, Hiddekel and Euphrates"
         }
     ]
 }
