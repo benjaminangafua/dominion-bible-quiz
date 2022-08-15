@@ -63,6 +63,45 @@
             "question": "What was Benjamin's initial name at birth",
             "options": ["Ben-jami", "Ben", "Favor", "Benoni"],
             "answer": "Benoni"
+        },
+        {
+            "number": 19,
+            "question":"What is the name of the king who disallowed Israel's passage during the Exodus?",
+            "options":["King Saul", "King Of Moriah", "King of Edom", "King David"],
+            "answer": "King of Edom"
+        },
+        {
+            "number":20,
+            "question": "Which of the author of the Bible is also a physician?",
+            "options":["Paul", "Boaz", "Moses", "Luke"],
+            "answer":"Luke"
+        },
+        {
+            "number":21,
+            "question":"Who shadow healed the sick?",
+            "options":["Peter","Paul","James","John"],
+            "answer":"Peter"
+        },
+        {
+            "number":22,
+            "question":"Name the three friends of Job that came to console him?",
+            "options":["Bildad, Eliphaz, Zophar", "Joab, Jashobeam, Eleazer", "Samballat, Tobiah, Geshen", "Shadrach, Meshach, Abednego"],
+            "answer":"Bildad, Eliphaz, Zophar"
+        },
+        {
+            "number":23,
+            "question":"Who is referred to ass the secret disciple of Jesus?",
+            "options":["Joseph who buried Jesus", "Nichodemus", "Zaccheaus", "Blind Bartimaeus"],
+            "answer":"Nichodemus"
+        },
+        {
+            "number":24,
+            "question":"Who is the first person in the Bible to defile his father's bed?",
+            "options":["Absalom", "Judah", "Reuben", "Ham"],
+            "answer":"Reuben"
+        },
+        {
+            
         }
     ]
 }
