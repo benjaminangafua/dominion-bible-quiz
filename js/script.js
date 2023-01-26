@@ -18,7 +18,7 @@ generalDiv.append(pagination_html)
 start_quiz.innerHTML = "Start Quiz"
 pagination_html.innerHTML = "Next ❯"
 
-let page = 1,
+let page = 0,
     limit = 3;
 
 // 0. Return a pagination object x
