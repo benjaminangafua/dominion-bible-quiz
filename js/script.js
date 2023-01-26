@@ -1,7 +1,6 @@
 let generalDiv = document.querySelector(".container")
 
 let start_quiz = document.createElement("button")
-let pagination_html = document.createElement("button")
 
 
 
@@ -9,14 +8,10 @@ let html_question = document.createElement("div")
 generalDiv.append(html_question)
 html_question.setAttribute("class", "html_question")
 
-pagination_html.setAttribute("class", "pagination")
-
 generalDiv.append(start_quiz)
-generalDiv.append(pagination_html)
 
 
 start_quiz.innerHTML = "Start Quiz"
-pagination_html.innerHTML = "Next ❯"
 
 let page = 0,
     limit = 3;
@@ -76,39 +71,36 @@ const checkAnswer = () => {
 }
 
 
-
-
 /**
  * 
  * @param {Object} e - DOM Element
  * @return {}
  */
-pagination_html.style.display = "none"
-start_quiz.onclick = (e) => {
-    pagination_html.style.display = "block"
 
-    // console.log(e)
-    fetch("../json/quiz.json")
-        .then(res => res.json())
-        .then(data => {
+// console.log(e)
+fetch("../json/quiz.json")
+    .then(res => res.json())
+    .then(data => {
 
 
-            pagination_html.onclick = () => {
+        start_quiz.onclick = (e) => {
 
-                if (page < 9) {
-                    page++
-                    const paginate_data = paginate(data, page, 3).questions
-                    displayQuestion(paginate_data)
-                } else {
-                    displayQuestion(paginate(data, page, 3).questions)
-                }
-                // console.log(page)
-                return page
+            e.target.innerHTML = "Next ❯"
+
+            if (page < 9) {
+                page++
+                const paginate_data = paginate(data, page, 3).questions
+                displayQuestion(paginate_data)
+            } else {
+                displayQuestion(paginate(data, page, 3).questions)
             }
+            // console.log(page)
 
             checkAnswer()
-        })
-}
+            return page
+        }
+    })
+
 
 /**
  * 
