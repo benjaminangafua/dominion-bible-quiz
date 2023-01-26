@@ -15,5 +15,6 @@ li {
 }
 
 input[type="radio"] {
+    list-style-type: upper-alpha;
     margin: 8px;
 }
