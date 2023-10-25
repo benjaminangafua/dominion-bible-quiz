@@ -145,5 +145,29 @@
         "question": "What are the names of the rivers that flow into the Garden of Eden?",
         "options": ["Nile, Jordan River, and The Dead Sea", "Pison, Gihon, Hiddekel and Euphrates", "Pacific, Atlantic, and Victor", "Volta, Cavala, Lofa and Mano"],
         "answer": "Pison, Gihon, Hiddekel and Euphrates"
+    },
+    {
+        "number": 26,
+        "question": "How many were the daughters of Philip who are virgins and prophetesses?",
+        "options": [],
+        "answer": "Four(4) Acts 21:9"
+    },
+    {
+        "number": 27,
+        "question": "Name the three men that were swallowed up by the earth for conspiracy against Moses.",
+        "options": [],
+        "answer": "Korah, Dathan, and Abirah Num. 16:1-34"
+    },
+    {
+        "number": 28,
+        "question": "Who is the man that wanted to obtain the gift of the Holy Spirit with money?",
+        "options": [],
+        "answer": "Simon, the sorcerer. Acts 8:18"
+    },
+    {
+        "number": 29,
+        "question": "Who is the first Christian Martyr?",
+        "options": [],
+        "answer": "Stephen. Acts 7:59-60"
     }
 ]
