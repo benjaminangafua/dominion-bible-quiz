@@ -2,172 +2,389 @@
         "number": 1,
         "question": "What is the name of the man that was struck dead by God for holding the Ark of God from falling?",
         "options": ["Uzzah", "Abner", "Obededom", "Edom"],
-        "answer": "Uzzah"
+        "answer": "Uzzah",
+        "verse": "2Sam. 6:6-7"
     },
     {
         "number": 2,
         "question": "Who was the first man in the Bible to get drunk with wine?",
         "options": ["Lot", "Ham", "Noah", "Solomon"],
-        "answer": "Noah"
+        "answer": "Noah",
+        "verse": "Genesis 9:20-21"
     },
     {
         "number": 3,
         "question": "How old was the oldest man (Methuselah) in the Bible when he died?",
         "options": ["950", "962", "969", "365"],
-        "answer": "969"
+        "answer": "969",
+        "verse": "Genesis 5:27"
     },
     {
         "number": 4,
         "question": "How many wives and concubines did king Solomon have?",
         "options": ["300 wives and 700 concubines", "700 concubines and 300 wives", "700 wives and 300 concubines", "300 concubines and 7000 wives"],
-        "answer": "700 wives and 300 concubines"
+        "answer": "700 wives and 300 concubines",
+        "verse": "1Kings 11:3"
     },
     {
         "number": 5,
         "question": "Who handkerchief healed the sick?",
         "options": ["Paul", "John", "Peter", "James"],
-        "answer": "Paul"
+        "answer": "Paul",
+        "verse": "Acts 19:11-12"
     },
 
     {
         "number": 6,
         "question": "State the Golden Rule.",
         "options": ["Thy shall not steal", "No sin goes unpunished", "Thy shall love thine neighbor as thyself", "Therefore all things whatsoever ye would that men should do to you: do ye even so to them: for this is the law and the prophets"],
-        "answer": "Therefore all things whatsoever ye would that men should do to you: do ye even so to them: for this is the law and the prophets"
+        "answer": "Therefore all things whatsoever ye would that men should do to you: do ye even so to them: for this is the law and the prophets",
+        "verse": "Matt. 7:12"
     },
 
     {
         "number": 7,
         "question": "How many people of Jacob's household went to Egypt?",
         "options": ["17", "12", "13", "70"],
-        "answer": "70"
+        "answer": "70",
+        "verse": "Genesis 46:27"
     },
 
     {
         "number": 8,
         "question": "What are the names of the two sons' of Joseph?",
         "options": ["Hophni and Phinehas", "Joshua and Caleb", "Ben-ammi and Moab", "Ephraim and Manasseh"],
-        "answer": "Ephraim and Manasseh"
+        "answer": "Ephraim and Manasseh",
+        "verse": "Genesis 48:1"
     },
 
     {
         "number": 9,
         "question": "Who was the youngest King recorded in the Bible?",
         "options": ["Solomon (7 years)", "Jeroboam (7 years)", "Rehoboam (7 years)", "Joash (7 years)"],
-        "answer": "Joash (7 years)"
+        "answer": "Joash (7 years)",
+        "verse": "2 Chro. 24:1"
     },
 
     {
         "number": 10,
         "question": "What was Benjamin's initial name at birth",
         "options": ["Ben-jami", "Ben", "Favor", "Benoni"],
-        "answer": "Benoni"
+        "answer": "Benoni",
+        "verse": "Genesis 35:18"
     }, {
         "number": 11,
         "question": "Where was Moses buried?",
         "options": ["In the valley in the land of Moah. Sepulchre unknown", "In the cave of Malchpelah", "Egypt", "In the Red Sea"],
-        "answer": "In the valley in the land of Moah. Sepulchre unknown"
+        "answer": "In the valley in the land of Moah. Sepulchre unknown",
+        "verse": "Deut. 34:6"
     }, {
         "number": 12,
         "question": "Who was the first woman prophet?",
         "options": ["Sarah", "Eve", "Rachel", "Miriam"],
-        "answer": "Miriam"
+        "answer": "Miriam",
+        "verse": "Ex. 15:20"
     }, {
         "number": 13,
         "question": "Name the man that was struck dumb by Angel Gabriel throughout his wife pregnancy(9 months) for unbelief.",
         "options": ["Simeon", "Zacharias", "Gideon", "Hezekiah"],
-        "answer": "Zacharias"
-
+        "answer": "Zacharias",
+        "verse": "Luke 1:18-20"
     }, {
         "number": 14,
         "question": "What are the names of the two men who never saw death?",
         "options": ["Joshua and Caleb", "John and Ezekiel", "Moses and Melchizedek", "Enoch and Elijah"],
-        "answer": "Enoch and Elijah"
+        "answer": "Enoch and Elijah",
+        "verse": "Genesis 5:23-24, 2Kings 2:11"
     }, {
         "number": 15,
         "question": "Whose house was the ark of God kept for 3 months after the death of Uzzah?",
         "options": ["David", "Obededom", "Joab", "Saul"],
-        "answer": "Obededom"
+        "answer": "Obededom",
+        "verse": "2Sam. 6:10-11"
     }, {
         "number": 16,
         "question": "What is the name of Joseph's wife?",
         "options": ["Rebekah", "Esther", "Asenath", "Deborah"],
-        "answer": "Asenath"
+        "answer": "Asenath",
+        "verse": "Genesis 41:45"
     }, {
         "number": 17,
         "question": "What is the second name of Daniel?",
         "options": ["Beltshazzar", "Bethel", "The interpreter", "The Lions' King"],
-        "answer": "Beltshazzar"
+        "answer": "Beltshazzar",
+        "verse": "Daniel 1:7"
     }, {
         "number": 18,
         "question": "Who was Israel first judge",
         "options": ["Sampson", "Deborah", "Jephthah", "Othniel"],
-        "answer": "Othniel"
+        "answer": "Othniel",
+        "verse": "Judges 3:9-11"
     },
     {
         "number": 19,
-        "question": "What is the name of the king who disallowed Israel's passage during the Exodus?",
+        "question": "What is the name of the king who disallowed Israel's passage during the Ex.?",
         "options": ["King Saul", "King Of Moriah", "King of Edom", "King David"],
-        "answer": "King of Edom"
+        "answer": "King of Edom",
+        "verse": "Num. 20:18-21"
     },
     {
         "number": 20,
         "question": "Which of the author of the Bible is also a physician?",
         "options": ["Paul", "Boaz", "Moses", "Luke"],
-        "answer": "Luke"
+        "answer": "Luke",
+        "verse": "Col.1, 4"
     },
     {
         "number": 21,
         "question": "Who shadow healed the sick?",
         "options": ["Peter", "Paul", "James", "John"],
-        "answer": "Peter"
+        "answer": "Peter",
+        "verse": "Acts 5:14-15"
     },
     {
         "number": 22,
         "question": "Name the three friends of Job that came to console him?",
         "options": ["Bildad, Eliphaz, Zophar", "Joab, Jashobeam, Eleazer", "Samballat, Tobiah, Geshen", "Shadrach, Meshach, Abednego"],
-        "answer": "Bildad, Eliphaz, Zophar"
+        "answer": "Bildad, Eliphaz, Zophar",
+        "verse": "Job 4, 8, 11"
     },
     {
         "number": 23,
         "question": "Who is referred to ass the secret disciple of Jesus?",
         "options": ["Joseph who buried Jesus", "Nichodemus", "Zaccheaus", "Blind Bartimaeus"],
-        "answer": "Nichodemus"
+        "answer": "Nichodemus",
+        "verse": "John 3:1-2"
     },
     {
         "number": 24,
         "question": "Who is the first person in the Bible to defile his father's bed?",
         "options": ["Absalom", "Judah", "Reuben", "Ham"],
-        "answer": "Reuben"
+        "answer": "Reuben",
+        "verse": "Genesis 49:3-4"
     },
     {
         "number": 25,
         "question": "What are the names of the rivers that flow into the Garden of Eden?",
         "options": ["Nile, Jordan River, and The Dead Sea", "Pison, Gihon, Hiddekel and Euphrates", "Pacific, Atlantic, and Victor", "Volta, Cavala, Lofa and Mano"],
-        "answer": "Pison, Gihon, Hiddekel and Euphrates"
+        "answer": "Pison, Gihon, Hiddekel and Euphrates",
+        "verse": "Genesis 2:11-14"
     },
     {
         "number": 26,
         "question": "How many were the daughters of Philip who are virgins and prophetesses?",
         "options": [],
-        "answer": "Four(4) Acts 21:9"
+        "answer": "Four(4)",
+        "verse": "Acts 21:9"
     },
     {
         "number": 27,
         "question": "Name the three men that were swallowed up by the earth for conspiracy against Moses.",
         "options": [],
-        "answer": "Korah, Dathan, and Abirah Num. 16:1-34"
+        "answer": "Korah, Dathan, and Abirah",
+        "verse": " Num. 16:1-34"
     },
     {
         "number": 28,
         "question": "Who is the man that wanted to obtain the gift of the Holy Spirit with money?",
         "options": [],
-        "answer": "Simon, the sorcerer. Acts 8:18"
+        "answer": "Simon",
+        "verse": "Simon, the sorcerer, Acts 8:18"
     },
     {
         "number": 29,
         "question": "Who is the first Christian Martyr?",
         "options": [],
-        "answer": "Stephen. Acts 7:59-60"
+        "answer": "Stephen",
+        "verse": "Acts 7:59-60"
+    },
+    {
+        "number": 30,
+        "question": "How long did the Israelites live in Egypt?",
+        "options": [],
+        "answer": "430 yrs.",
+        "verse": "Exo. 12:40"
+    },
+    {
+        "number": 31,
+        "question": "Who offered strange fire before the Lord and were struck dead?",
+        "options": [],
+        "answer": "Nadab and Abihu, the sons of Aaron.",
+        "verse": "Lev. 10:1"
+    },
+    {
+        "number": 32,
+        "question": "Which person became lame as a result of a fall from a fleeing nurse?",
+        "options": [],
+        "answer": "Melphibosheth",
+        "verse": "2Sam. 4:4"
+    },
+    {
+        "number": 33,
+        "question": "Who were the two men who ate books?",
+        "options": [],
+        "answer": "John and Ezekiel",
+        "verse": "John Rev.10:9 and Ezekiel Ezek. 2:8-9"
+    },
+    {
+        "number": 34,
+        "question": "How old was Moses when he died?",
+        "options": [],
+        "answer": "120 yrs",
+        "verse": "Deut. 34:7"
+    },
+    {
+        "number": 35,
+        "question": "Which man's rash vow cursed his daughter's death?",
+        "options": [],
+        "answer": "Jephthah",
+        "verse": "Judges 11:30-40"
+    },
+    {
+        "number": 36,
+        "question": "Who was the first cattle rearer on earth?",
+        "options": [],
+        "answer": "Jabel",
+        "verse": "Genesis 4:20"
+    },
+    {
+        "number": 37,
+        "question": "What is the name of the place that had a widow whose only son died and was restored to life by Jesus?",
+        "options": [],
+        "answer": "The widow of Nain",
+        "verse": "Luke 7:11-16"
+    },
+    {
+        "number": 38,
+        "question": "Name the king whose hand got withered.",
+        "options": [],
+        "answer": "Jeroboam",
+        "verse": "1Kings 13:4"
+    },
+    {
+        "number": 39,
+        "question": "Which place was Abraham and Sarah buried?",
+        "options": [],
+        "answer": "In the cave of Machpelah in the field of Ephron",
+        "verse": "Genesis 25:9-10, 23:19"
+    },
+    {
+        "number": 40,
+        "question": "What is the meaning of Hosea daughter's name Lo-ruhammah?",
+        "options": [],
+        "answer": "God has withdrawn his mercy from Israel(Rejection)",
+        "verse": "Hosea 1:6"
+    },
+    {
+        "number": 41,
+        "question": "What were the food of John the Baptist in the desert?",
+        "options": [],
+        "answer": "Locust and wild honey",
+        "verse": "Matt. 3:4"
+    },
+    {
+        "number": 42,
+        "question": "List the gifts given to Jesus by the wise men.",
+        "options": [],
+        "answer": "Gold, frankincense, and myrrh",
+        "verse": "Matt. 2:11"
+    },
+    {
+        "number": 43,
+        "question": "How many baskets of fishes were left when Jesus fed the five thousand(5,000) men with five(5) loaves of bread and two fishes?",
+        "options": [],
+        "answer": "Twelve(12) baskets",
+        "verse": "Luke 9:17"
+    },
+    {
+        "number": 44,
+        "question": "What is the name of the family that never took wine nor built houses throughout their generation because of the initial command by their father?",
+        "options": [],
+        "answer": "Rechabites",
+        "verse": "Rechabites, their father name was Jonadab the son of Rechab. Jeremiah 35:17"
+    },
+    {
+        "number": 45,
+        "question": "Which prophet is referred to as the weeping prophet?",
+        "options": [],
+        "answer": "ProphetJeremiah",
+        "verse": ""
+    },
+    {
+        "number": 46,
+        "question": "Who were the two sons of King Sennacherib that killed he while hes was worshiping his god?",
+        "options": [],
+        "answer": "Sharezer and Adrammelech",
+        "verse": "2Kings 19:32-36"
+    },
+    {
+        "number": 47,
+        "question": "How many prophets of Baal were slain by Elijah when God answered by fire?",
+        "options": [],
+        "answer": "450",
+        "verse": "450 prophets, 1Kings 18:19-40"
+    },
+    {
+        "number": 48,
+        "question": "What is the name of the wife of Moses?",
+        "options": [],
+        "answer": "Zipporah",
+        "verse": "Ex. 18:2"
+    },
+    {
+        "number": 49,
+        "question": "How long did Jesus stay on earth after His resurrection?",
+        "options": [],
+        "answer": "40 days",
+        "verse": "Acts 1:3"
+    },
+    {
+        "number": 50,
+        "question": "What is the name of Solomon's mother?",
+        "options": [],
+        "answer": "Bathsheba",
+        "verse": "Bathsheba (Uriah's wife), 2Sam. 12:24"
+    },
+    {
+        "number": 51,
+        "question": "State the royal rule.",
+        "options": [],
+        "answer": "Thou shall love thy neighbor as thyself",
+        "verse": "James 2:8"
+    },
+    {
+        "number": 52,
+        "question": "How many of the disciples were in the upper room in the day of Pentecost when the Holy Ghost came down?",
+        "options": [],
+        "answer": "120",
+        "verse": "Acts 1:13-15, 2:1"
+    },
+    {
+        "number": 53,
+        "question": "At the feeding of four thousand (4,000) men by Jesus with seven full baskets left, how many loaves of bread and fishes were used?",
+        "options": [],
+        "answer": "Seven(7) loaves and few fishes",
+        "verse": "Matt: 15:36-37"
+    },
+    {
+        "number": 54,
+        "question": "Of the seven churches listed in the book of Revelation, which church is the loyal or best church?",
+        "options": [],
+        "answer": "The church in Philadelphia",
+        "verse": "Rev. 3:7-13"
+    },
+    {
+        "number": 55,
+        "question": "How many sons of Ahab in Samaria were killed by Jehu?",
+        "options": [],
+        "answer": "Seventy(70)",
+        "verse": "2Kings 10:1-7"
+    },
+    {
+        "number": 56,
+        "question": "What is the number of souls saved in the flood of Noah?",
+        "options": [],
+        "answer": "8 souls",
+        "verse": "Genesis 7:13"
     }
 ]
