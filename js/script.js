@@ -87,7 +87,7 @@ fetch("../json/quiz.json")
 
             e.target.innerHTML = "Next ❯"
 
-            if (page < 9) {
+            if (page < 100) {
                 page++
                 const paginate_data = paginate(data, page, 3).questions
                 displayQuestion(paginate_data)
