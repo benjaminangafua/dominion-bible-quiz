@@ -1,15 +1,10 @@
-let generalDiv = document.querySelector(".container")
+const generalDiv = document.querySelector(".container")
+const start_quiz = document.createElement("button")
+const html_question = document.createElement("div")
 
-let start_quiz = document.createElement("button")
-
-
-
-let html_question = document.createElement("div")
-generalDiv.append(html_question)
 html_question.setAttribute("class", "html_question")
-
+generalDiv.append(html_question)
 generalDiv.append(start_quiz)
-
 
 start_quiz.innerHTML = "Start Quiz"
 
@@ -41,22 +36,17 @@ let page = 0,
 const paginate = (data, page, limit) => {
     page = parseInt(page)
     limit = parseInt(limit)
-        // Calculate total pages
+
     const totalQuestion = data.length
-
     const totalPage = Math.ceil(totalQuestion / limit)
-
-    // Calculate where to Start and end of the contents to display
     const start = (page - 1) * limit;
     const end = start + limit;
 
     // Display data
     const fetchedQuestions = data.slice(start, end)
     const number_of_questions = `${limit} of ${data.length}`
-
     return { totalPage: totalPage, currentPage: page, number_of_questions: number_of_questions, questions: fetchedQuestions }
 }
-
 
 
 /**
@@ -70,7 +60,6 @@ const checkAnswer = () => {
     }))
 }
 
-
 /**
  * 
  * @param {Object} e - DOM Element
@@ -81,7 +70,6 @@ const checkAnswer = () => {
 fetch("../json/quiz.json")
     .then(res => res.json())
     .then(data => {
-
 
         start_quiz.onclick = (e) => {
 
@@ -94,8 +82,6 @@ fetch("../json/quiz.json")
             } else {
                 displayQuestion(paginate(data, page, 3).questions)
             }
-            // console.log(page)
-
             checkAnswer()
             return page
         }
@@ -111,21 +97,20 @@ let i = 0;
 
 function displayQuestion(data) {
     html_question.innerHTML = " ";
-
     data.forEach((ques, ind) => {
 
         let options = "";
         ques.options.forEach((ele) => {
             options += `
          <li>
-             <label for="${ques.number}" name="${ques.number}" id="${ques.number}${ind}">
+             <label id="${ques.number}" id="${ques.number}${ind}">
                  <input type="radio" class="option" name="${ques.number}" data-ben="${ques.answer}" value="${ele}">${ele}</input>
              </label>
          </li>`
         })
         html_question.innerHTML += `
          <div class="question">
-             <div> <b> ${ques.number}. ${ques.question}</b></div>
+             <div><b>${ques.number}. ${ques.question}</b></div>
              ${options}
          </div>
          `
