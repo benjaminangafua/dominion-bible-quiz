@@ -1,13 +1,107 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 5% 20%;
+    position: relative;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.img-logo>img {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.bannerImg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navBar {
+    background-color: aliceblue;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    color: rgb(16, 2, 12);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navBar>ul {
+    display: inline-flex;
+    justify-content: end;
+}
+
+.navBar>ul li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #000000a8;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navList>li {
+    list-style: none;
+}
+
+button.start-quiz {
+    background-color: #fff;
+    align-self: center;
+    color: rgb(16, 2, 12);
+    cursor: pointer;
+    display: grid;
+    border: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin-top: 5%;
+    border-radius: 4px;
+    /* width: 20%; */
+}
+
+.home-content {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #190101;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    color: #fff;
+    margin: auto;
+    margin-top: 5%;
+    width: 70vw;
+}
+
+.home-content>div {
+    padding: 20px 25px;
+}
+
+.home-content>div>h1,
+.home-content>div>p {
+    margin-bottom: 30px;
 }
 
 li {
-    list-style: none;
+    padding-block: 5px;
+}
+
+.home-content>div>ul {
+    padding-left: 25px;
+    text-transform: capitalize;
+}
+
+.home-content>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .question {
@@ -17,4 +111,25 @@ li {
 input[type="radio"] {
     list-style-type: upper-alpha;
     margin: 8px;
+}
+
+.container {
+    display: grid;
+    background-color: aliceblue;
+    margin-top: 5%;
+    margin: auto;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+select {
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+select option,
+option {
+    text-transform: capitalize;
 }

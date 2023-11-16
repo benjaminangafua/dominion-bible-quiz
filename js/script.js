@@ -1,12 +1,7 @@
-const generalDiv = document.querySelector(".container")
-const start_quiz = document.createElement("button")
-const html_question = document.createElement("div")
-
-html_question.setAttribute("class", "html_question")
-generalDiv.append(html_question)
-generalDiv.append(start_quiz)
-
-start_quiz.innerHTML = "Start Quiz"
+const quiz_topic = document.querySelector(".quiz-topic")
+const start_quiz = document.querySelector(".start-quiz")
+const select_topic = document.querySelector(".select-topic")
+const home_content = document.querySelector(".home-content")
 
 let page = 0,
     limit = 3;
@@ -67,27 +62,54 @@ const checkAnswer = () => {
  */
 
 // console.log(e)
+
 fetch("../json/quiz.json")
     .then(res => res.json())
     .then(data => {
 
+        quiz_topic.innerHTML = list(data, "li")
+        select_topic.innerHTML = list(data, 'option')
+        select_topic.style.display = "none"
+
         start_quiz.onclick = (e) => {
 
-            e.target.innerHTML = "Next ❯"
+            home_content.style.display = "none"
+            select_topic.style.display = "grid"
 
-            if (page < 100) {
-                page++
-                const paginate_data = paginate(data, page, 3).questions
-                displayQuestion(paginate_data)
-            } else {
-                displayQuestion(paginate(data, page, 3).questions)
+            select_topic.onchange = (event) => {
+                data.forEach(ele => {
+                    if (Object.keys(ele).includes(event.target.value)) {
+                        console.log(ele[event.target.value])
+                            // if (page < data[0]["general knowledge"].length) {
+                            //     page++
+                            //     let _, dt = data.forEach(ele => _ = (ele["general knowledge"]));
+                            //     const paginate_data = paginate(_, page, 3).questions
+                            //     displayQuestion(paginate_data)
+                            // } else {
+                            //     displayQuestion(paginate(data, page, 3).questions)
+                            // }
+                    }
+                })
             }
-            checkAnswer()
-            return page
+
+            // e.target.innerHTML = "Next ❯"
+
+
+            // checkAnswer()
+            // return page
         }
     })
 
+function selectTopic(event) {
+    console.log(event.target.value)
+}
 
+function list(data, element) {
+
+    let dt = `<${element}>Element</${element}>`;
+    data.forEach(ele => Object.keys(ele).forEach(elem => dt += `<${element} value="${elem}">${elem}</${element}>`))
+    return dt;
+}
 /**
  * 
  * @param {data} data - Question json
@@ -95,24 +117,24 @@ fetch("../json/quiz.json")
  */
 let i = 0;
 
-function displayQuestion(data) {
-    html_question.innerHTML = " ";
-    data.forEach((ques, ind) => {
+// function displayQuestion(data) {
+//     html_question.innerHTML = " ";
+//     data.forEach((ques, ind) => {
 
-        let options = "";
-        ques.options.forEach((ele) => {
-            options += `
-         <li>
-             <label id="${ques.number}" id="${ques.number}${ind}">
-                 <input type="radio" class="option" name="${ques.number}" data-ben="${ques.answer}" value="${ele}">${ele}</input>
-             </label>
-         </li>`
-        })
-        html_question.innerHTML += `
-         <div class="question">
-             <div><b>${ques.number}. ${ques.question}</b></div>
-             ${options}
-         </div>
-         `
-    });
-}
+//         let options = "";
+//         ques.options.forEach((ele) => {
+//             options += `
+//          <li>
+//              <label id="${ques.number}" id="${ques.number}${ind}">
+//                  <input type="radio" class="option" name="${ques.number}" value="${ele}">${ele}</input>
+//              </label>
+//          </li>`
+//         })
+//         html_question.innerHTML += `
+//          <div class="question">
+//              <div><b>${ques.number}. ${ques.question}</b></div>
+//              ${options}
+//          </div>
+//          `
+//     });
+// }
