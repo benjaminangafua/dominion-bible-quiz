@@ -16,12 +16,6 @@ body {
     cursor: pointer;
 }
 
-.bannerImg {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-}
-
 .navBar {
     background-color: aliceblue;
     font-weight: bold;
@@ -43,18 +37,11 @@ body {
     cursor: pointer;
 }
 
-.overlay {
-    position: absolute;
-    background-color: #000000a8;
-    height: 100vh;
-    width: 100vw;
-}
-
 .navList>li {
     list-style: none;
 }
 
-button.start-quiz {
+button.BEGIN_QUIZ {
     background-color: #fff;
     align-self: center;
     color: rgb(16, 2, 12);
@@ -68,7 +55,7 @@ button.start-quiz {
     /* width: 20%; */
 }
 
-.home-content {
+.LANDING_PAGE {
     grid-template-columns: repeat(2, 1fr);
     background-color: #190101;
     border-radius: 4px;
@@ -80,12 +67,12 @@ button.start-quiz {
     width: 70vw;
 }
 
-.home-content>div {
+.LANDING_PAGE>div {
     padding: 20px 25px;
 }
 
-.home-content>div>h1,
-.home-content>div>p {
+.LANDING_PAGE>div>h1,
+.LANDING_PAGE>div>p {
     margin-bottom: 30px;
 }
 
@@ -93,12 +80,12 @@ li {
     padding-block: 5px;
 }
 
-.home-content>div>ul {
+.LANDING_PAGE>div>ul {
     padding-left: 25px;
     text-transform: capitalize;
 }
 
-.home-content>img {
+.LANDING_PAGE>img {
     position: relative;
     width: 100%;
     height: 100%;
