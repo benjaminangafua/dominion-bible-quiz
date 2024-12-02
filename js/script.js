@@ -75,22 +75,26 @@ const checkAnswer = () => {
 fetch("../json/quiz.json")
   .then((res) => res.json())
   .then((data) => {
-    if (data) {
-      QUIZ_CATEGORY.innerHTML = list(data, "li");
-      SELECTED_CATEGORY.innerHTML = list(data, "option");
-      SELECTED_CATEGORY.style.display = "none";
+    try {
+      if (data) {
+        QUIZ_CATEGORY.innerHTML = list(data, "li");
+        SELECTED_CATEGORY.innerHTML = list(data, "option");
+        SELECTED_CATEGORY.style.display = "none";
 
-      BEGIN_QUIZ.onclick = (e) => {
-        LANDING_PAGE.style.display = "none";
-        SELECTED_CATEGORY.style.display = "grid";
+        BEGIN_QUIZ.onclick = (e) => {
+          LANDING_PAGE.style.display = "none";
+          SELECTED_CATEGORY.style.display = "grid";
 
-        SELECTED_CATEGORY.onchange = (event) => {
-          GetQuestions(data, event);
+          SELECTED_CATEGORY.onchange = (event) => {
+            GetQuestions(data, event);
+          };
+          // e.target.innerHTML = "Next ❯";
+          // checkAnswer()
+          // return page
         };
-        // e.target.innerHTML = "Next ❯";
-        // checkAnswer()
-        // return page
-      };
+      }
+    } catch (error) {
+      console.error(error);
     }
   });
 
