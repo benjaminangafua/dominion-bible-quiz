@@ -72,7 +72,7 @@ const checkAnswer = () => {
  * @return {}
  */
 
-fetch("https://benjaminangafua.github.io/json/quiz.json")
+fetch("https://benjaminangafua.github.io/quiz.json")
   .then((res) => res.json())
   .then((data) => {
     try {
