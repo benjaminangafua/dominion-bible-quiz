@@ -9,6 +9,12 @@ let page = 2,
   limit = 3,
   pageStart = false;
 
+//  Check Json Path
+const isLocal =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
+const basePath = isLocal ? "../quiz.json" : "/dominion-bible-quiz/quiz.json";
 // 0. Return a pagination object x
 // 1. Return questions x
 // 2. Return total number of questions x
@@ -72,8 +78,14 @@ const checkAnswer = () => {
  * @return {}
  */
 
-fetch("https://benjaminangafua.github.io/dominion-bible-quiz/quiz.json")
-  .then((res) => res.json())
+fetch(basePath)
+  .then((res) => {
+    if (!res.ok) {
+      throw new Error(`HTTP Error! Status: ${res.status}`);
+    }
+
+    return res.json();
+  })
   .then((data) => {
     try {
       if (data) {
@@ -94,7 +106,7 @@ fetch("https://benjaminangafua.github.io/dominion-bible-quiz/quiz.json")
         };
       }
     } catch (error) {
-      console.error(error);
+      console.error(`Error: ${error}`);
     }
   });
 
