@@ -1,6 +1,8 @@
 const LANDING_PAGE = document.querySelector(".LANDING_PAGE");
 const QUIZ_CATEGORY = document.querySelector(".QUIZ_CATEGORY");
 const BEGIN_QUIZ = document.querySelector(".BEGIN_QUIZ");
+const DISPLAY_QUESTIONS = document.querySelector(".display-questions");
+const DISPLAY_NAVIGATION = document.querySelector(".display-navigation");
 const SELECTED_CATEGORY = document.querySelector(".SELECTED_CATEGORY");
 const HTML_QUESTION = document.querySelector(".HTML_QUESTION");
 const NextPage = document.querySelector(".NEXT_PAGE");
@@ -61,16 +63,6 @@ const paginate = (data, page, limit) => {
 /**
  * @return {Boolean} check - for correct answer
  */
-const checkAnswer = () => {
-  document.querySelectorAll(".option").forEach((elem) =>
-    elem.addEventListener("change", (e) => {
-      e.target.parentElement.style.backgroundColor =
-        e.target.value == e.target.dataset.ben && e.target.checked == true
-          ? "green"
-          : "none";
-    })
-  );
-};
 
 /**
  *
@@ -99,9 +91,10 @@ fetch(basePath)
 
           SELECTED_CATEGORY.onchange = (event) => {
             GetQuestions(data, event);
+
+            DISPLAY_NAVIGATION.style.display = "block";
           };
           // e.target.innerHTML = "Next ❯";
-          // checkAnswer()
           // return page
         };
       }
@@ -116,7 +109,6 @@ function GetQuestions(data, event) {
 
     if (Object.keys(ele).includes(VALUES)) {
       let _ = ele[VALUES];
-
       let paginated_data = paginate(_, 1, 3).questions;
       const totalPages = paginate(_, 1, 3).totalPage;
       displayQuestion(paginated_data);
@@ -142,7 +134,7 @@ function GetQuestions(data, event) {
 }
 
 function list(data, element) {
-  let dt = `<${element}>Element</${element}>`;
+  let dt = ``;
   data.forEach((ele) =>
     Object.keys(ele).forEach(
       (elem) => (dt += `<${element} value="${elem}">${elem}</${element}>`)
@@ -158,23 +150,42 @@ function list(data, element) {
 let i = 0;
 
 function displayQuestion(data) {
-  HTML_QUESTION.innerHTML = " ";
+  try {
+    HTML_QUESTION.innerHTML = " ";
 
-  data.forEach((ques, ind) => {
-    let options = "";
-    ques.options.forEach((ele) => {
-      options += `
+    if (data.length > 0) {
+      data.forEach((ques, ind) => {
+        let options = "";
+        ques.options.forEach((ele) => {
+          options += `
        <li>
-           <label id="${ques.number}" id="${ques.number}${ind}">
-               <input type="radio" class="option" name="${ques.number}" value="${ele}">${ele}</input>
+           <label id="${ques.number}">
+               <input type="radio" class="option" name="${ques.number}" data-answer="${ques.answer}" value="${ele}">${ele}</input>
            </label>
        </li>`;
-    });
-    HTML_QUESTION.innerHTML += `
+        });
+        HTML_QUESTION.innerHTML += `
        <div class="question">
-           <div><b>${ques.number}. ${ques.question}</b></div>
+           <div><b>${ques.number}.${ques.question}</b></div>
            ${options}
        </div>
        `;
-  });
+      });
+      checkAnswer();
+    }
+  } catch (error) {
+    console.error(error);
+  }
 }
+const checkAnswer = () => {
+  document.querySelectorAll(".option").forEach((elem) =>
+    elem.addEventListener("change", (e) => {
+      console.log(e.target.value, e.target.dataset.answer, e.target.checked);
+
+      e.target.parentElement.style.backgroundColor =
+        e.target.value === e.target.dataset.answer && e.target.checked === true
+          ? "green"
+          : "red";
+    })
+  );
+};

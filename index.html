@@ -13,31 +13,37 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <div class="img-logo"><img src="./img/quiz-icon.jpg" alt="Ben and Tracy"></div>
-        <ul class="navList">
-            <li>Add Contact</li>
-            <li>Search Contact</li>
-        </ul>
-    </div>
-    <div class="LANDING_PAGE">
-        <img class="img" src="./img/cap.jpg" alt="Ben and Tracy">
-        <div class="LANDING_PAGE-txt">
-            <h1>Dominion Bible Quiz</h1>
-            <p>Welcome to the Dominion Bible Quiz. This trivial is divided into 6 different sections.</p>
-            <ul class="QUIZ_CATEGORY">
+    <div class="container">
+
+        <div class="navBar">
+            <div class="img-logo"><img src="./img/quiz-icon.jpg" alt="Ben and Tracy"></div>
+            <ul class="navList">
+                <li>Add Question</li>
+                <li>Search Question</li>
             </ul>
-            <div><button class="BEGIN_QUIZ">Start Quiz</button></div>
+        </div>
+        <div class="LANDING_PAGE">
+            <div class="LANDING_PAGE-txt">
+                <h1>Dominion Bible Quiz</h1>
+                <p>Welcome to the Dominion Bible Quiz. This trivial is divided into 6 different sections.</p>
+                <ul class="QUIZ_CATEGORY">
+                </ul>
+                <div><button class="BEGIN_QUIZ">Start Quiz</button></div>
+            </div>
+        </div>
+
+        <div class="display-questions">
+            <div class="topic-container">
+                <select name="" class="SELECTED_CATEGORY"></select>
+            </div>
+            <div class="HTML_QUESTION"></div>
+            <div class="display-navigation">
+                <button class="PREVIOUS_PAGE">Previous</button>
+                <button class="NEXT_PAGE">NEXT</button>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <select name="" class="SELECTED_CATEGORY">
-</select>
-    </div>
 
-    <div class="HTML_QUESTION"></div>
-    <button class="PREVIOUS_PAGE">Previous</button>
-    <button class="NEXT_PAGE">NEXT</button>
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>

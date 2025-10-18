@@ -11,13 +11,13 @@ body {
     width: 100vw; */
 }
 
-.img-logo>img {
-    width: 3vw;
-    cursor: pointer;
+.container {
+    margin: auto;
+    padding: 20px 25px;
+    width: 90vw;
 }
 
 .navBar {
-    background-color: aliceblue;
     font-weight: bold;
     align-items: center;
     position: relative;
@@ -41,6 +41,11 @@ body {
     list-style: none;
 }
 
+.img-logo>img {
+    width: 3vw;
+    cursor: pointer;
+}
+
 button.BEGIN_QUIZ {
     background-color: #fff;
     align-self: center;
@@ -56,15 +61,10 @@ button.BEGIN_QUIZ {
 }
 
 .LANDING_PAGE {
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #190101;
     border-radius: 4px;
     position: relative;
-    display: grid;
-    color: #fff;
     margin: auto;
     margin-top: 5%;
-    width: 70vw;
 }
 
 .LANDING_PAGE>div {
@@ -85,14 +85,20 @@ li {
     text-transform: capitalize;
 }
 
-.LANDING_PAGE>img {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.QUIZ_CATEGORY {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
 }
 
 .question {
     margin-bottom: 15px;
+}
+
+.question>li {
+    list-style: none;
 }
 
 input[type="radio"] {
@@ -100,13 +106,22 @@ input[type="radio"] {
     margin: 8px;
 }
 
-.container {
+.display-navigation {
+    display: none;
+}
+
+.topic-container {
     display: grid;
-    background-color: aliceblue;
-    margin-top: 5%;
-    margin: auto;
-    padding: 10px 20px;
+    padding-block: 10px 20px;
     width: max-content;
+}
+
+.HTML_QUESTION {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 select {
